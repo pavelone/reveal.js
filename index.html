@@ -37,6 +37,39 @@
 	</head>
 
 	<body>
+		<style>
+		.gold { color: gold !important; }
+		.green { color: #6f6 !important; }
+		.reveal pre { box-shadow: none; }
+		.tbl td,
+		.reveal .tbl th {
+		  padding: 5px;
+		  margin: 0;
+		  border-bottom: 1px solid #ddd;
+		  font-weight: normal;
+		}
+		.reveal .tbl td {
+		  text-align: center;
+		  color: lightgreen;
+		  font-weight: bold;
+		}
+
+		@font-face {
+		  font-family: 'LogosFont';
+		  src: url('./LogosFont.ttf');
+		  font-weight: normal;
+		  font-style: normal;
+		}
+		.reveal .icon {
+		  display: inline-block;
+		  font-family: LogosFont ;
+		  font-style: normal;
+		  font-weight: normal;
+		  line-height: 1;
+		  -webkit-font-smoothing: antialiased;
+		  -moz-osx-font-smoothing: grayscale;
+		}
+		</style>
 
 		<div class="reveal">
 
@@ -46,13 +79,12 @@
 			<section>
 	      <h3>Pavel Smirnov <h3>
 	      <h3>PM with <a href="http://health-samurai.io/" target="_blank">Health Samurai</a></h3>
-	      <p><a href="http://choice-hs.com/" target="_blank">Choice-Hospital-Systems</a></p>
 	      <p>(818)731-1279</p>
 	      <p>
 	      <a href="mailto:pavel.s.smirnov@gmail.com" target="_blank">pavel.s.smirnov@gmail.com</a> /
 	      <a href="https://github.com/pavelone" target="_blank">github</a> /
-	      <a href="http://www.linkedin.com/pub/pavel-smirnov/2/b95/526" target="_blank">linkedin</a> /
-	      <a href="https://plus.google.com/u/0/+PavelSmirnovS"  target="_blank">G+</a> /
+	      <a href="https://www.linkedin.com/in/pavelsmirnoff" target="_blank">linkedin</a> /
+	      <a href="https://plus.google.com/u/0/+PavelSmirnovS"  target="_blank">G+</a>
 	      </p>
 	      </p>
     	</section>
@@ -60,158 +92,160 @@
     	<section>
     		<h2><a href="http://health-samurai.io/" target="_blank">Health Samurai</a></h2>
 
-				<p>Looking for simplicity in a complex domain</p>   			
-    	</section>
-
-    	<section>
-    		<h2>Our Core Values</h2>
-
-    		<ul>
-						<li>We value professionalism and education</li>
-						<li>We like Open Source</li>
-						<li>We are fanatics of quality & standards</li>
-						<li>We constantly re-evaluate our processes and technologies to solve more and more complex problems (continuous improvement)</li>
-				</ul>
-    	</section>
-
-    	<section>
-    		<h2> What we've done </h2>
-
-    		<ul>
-						<li>MedClient - cloud based Electronic Health Record system for <a href="http://choice-hs.com/" target="_blank">Choice-Hospital-Systems</a></li>
-						<li><a href="https://github.com/fhirbase" target="_blank">Fhirbase</a> - open source relational storage for FHIR resources (<a href="http://try-fhirplace.hospital-systems.com/fhirface/index.html#/" target="_blank">live demo</a>)</li>
-						<li><a href="http://formstamp.github.io/#/" target="_blank">Formstamp</a> - open source widget set for AngularJs applications</li>
-						<li><a href="https://github.com/foodtaster" target="_blank">Foodtaster</a> - open source library for test driven devops (Chef & Vagrant) </li>
-				</ul>
-    	</section>
-
-    	<section>
-    		<h2>Our Technical Stack</h2>
-
-    		<ul>
-						<li>Linux (operating system)</li>
-						<li>PostgreSQL (open source database)</li>
-						<li>Ruby & Ruby On Rails - efficient web development stack</li>
-						<li>AngularJs - google open source MVVM framework for interactive front-end applications</li>
-						<li>Other front-end libs: Twitter Bootstrap, D3, bower, node, npm, less, coffeescript etc</li>
-						<li>Clojure, a perfect pragmatic choice between quick development, enterprise java infrastructure and formal academic power</li>
-						<li>Chef, Vagrant & Sensu (for infrastructure as a code)</li>
-						<li>Amazon AWS, a source of compute and storage power</li>
-				</ul>
-    	</section>
-
-    	<section>
-    		<h2>Development Tools</h2>
-
-    		<ul>
-						<li>Github - source control</li>
-						<li>Teamcity - continuous integration (deployment) server</li>
-						<li>Redmine - issue tracker</li>
-						<li>Selenium - web browser automated testing</li>
-						<li>New Relic - web traffic performance monitoring</li>
-						<li>Chef - infrastructure management</li>
-						<li>Sensu - monitoring</li>
-						<li>Balsamic, mind mapping and other tools for customer development, ux testing
-etc</li>
-				</ul>
-    	</section>
-
-    	<section>
-    		<h2>Development methodologies</h2>
-
-    		<ul>
-						<li>Agile development methods: backlog, scrum (meetings), pair programming, user stories etc</li>
-						<li>Continuous Delivery</li>
-						<li>Test Driven Development & Continuous Integration</li>
-						<li>DevOps (Infrastructure as a code)</li>
-						<li>Rapid prototyping</li>
-						<li>Lean Customer Development</li>
-				</ul>
-    	</section>
-
-    	<section>
-    		<h2>Standards and clinical model</h2>
-
-    		<ul>
-						<li>We insist on standards</li>
-						<li>HL7 FHIR clinical model</li>
-						<li>ICD9, ICD10, CPT, SNOMED, LOINC, RxNorm etc</li>
-				</ul>
+				<p>looking for simplicity in a complex domain</p>   			
     	</section>
 			
 			<section>
-				<h2>Our offer</h2>
-				<a class="image" href="http://try-fhirplace.hospital-systems.com/" target="_blank">
-					<img width="790" height="450" src="images/fhirbase_architec2.png" alt="Meny">
-				</a>
-			</section>
+	    	<section>
+	    		<h2>Our Core Values</h2>
 
-			<section>
-			<h2>What led us down this path</h2>
-				<ul>
-						<li class="fragment">Health Samurai developed and implemented ONC certified EHR in three California hospitals</li>
-						<li class="fragment">We were doing everything from research and development to user support ourselves</li>
-						<li class="fragment">Hospitals didn’t hire a single person to help us. So we were getting all the feedback firsthand</li>
-						<li class="fragment">We saw all the diversity of user requirements and understood that it is just
-						not possible to satisfy all of them with a single monolithic EHR</li>
-						<li class="fragment">That’s why we chose to build a platform which will allow to build a myriad of apps on top of it to satisfy all the needs</li>
-				</ul>
-			</section>
+	    		<ul>
+							<li>we value professionalism and education</li>
+							<li>we like open source</li>
+							<li>we are fanatics of quality and standards</li>
+							<li>we constantly improving our processes and technologies to solve more and more complex problems</li>
+					</ul>
+	    	</section>
+    	
+	    	<section>
+	    		<h2> What we've done </h2>
 
-			<section>
-			<h2>Gaps in Meaningful use requirements</h2>
-				<ul>
-						<li>Meaningful use concern about processes and not the outcomes</li>
-						<li>Meaningful use requirements are not aligned with hospital goals</li>
-						<li>Meaningful use program is welcomed by many CEO and CFO, less by CNO, physicians and nurses</li>
-						<li>A lot of public organizations are not ready to receive public measure reporting data</li>
-				</ul>
-			</section>
+	    		<ul>
+							<li>MedClient - cloud based Electronic Health Record system for <a href="http://choice-hs.com/" target="_blank">Choice Hospital Systems</a></li>
+							<li><a href="http://try-fhirplace.hospital-systems.com/fhirbase-presentation/index.html#/" target="_blank">fhirbase</a> - is an open source stack for Health IT application development based on FHIR standard</li>
+							<li><a href="http://formstamp.github.io/#/" target="_blank">formstamp</a> - open source widget set for AngularJs applications</li>
+							<li><a href="https://github.com/foodtaster" target="_blank">foodtaster</a> - open source library for test driven devops (Chef & Vagrant) </li>
+					</ul>
+	    	</section>
 
-			<section id="fragments">
-				<h2>Why is it bad?</h2>
-				<p>Why not implement both Meaningful use and important hospital requirements?</p>
-				<br>
-				<ul>
-					<li class="fragment"><strong>You cannot implement everything, you have to choose</strong></li>
-					<li class="fragment"><strong>Right now hospitals and physician offices are forced to choose meaningful use requirements and have to delay a lot of other things
-					</strong></li>
-				</ul>
-			</section>
+	    	<section>
+	    		<h2>Our Technical Stack</h2>
 
-				<section>
+	    		<ul>
+							<li>Linux (operating system)</li>
+							<li>PostgreSQL (open source database)</li>
+							<li>Ruby & Ruby On Rails - efficient web development stack</li>
+							<li>AngularJs - google open source MVVM framework for interactive front-end applications</li>
+							<li>Other front-end libraries: twitter bootstrap, D3, bower, node, npm, less, coffeescript etc</li>
+							<li>Clojure, a perfect pragmatic choice between quick development, enterprise java infrastructure and formal academic power</li>
+							<li>Chef, Vagrant & Sensu (for infrastructure as a code)</li>
+							<li>Amazon AWS, a source of compute and storage power</li>
+					</ul>
+	    	</section>
+
+	    	<section>
+	    		<h2>Development methodologies</h2>
+
+	    		<ul>
+							<li>Agile development methods: backlog, scrum (meetings), pair programming, user stories etc</li>
+							<li>Continuous Delivery</li>
+							<li>Test Driven Development & Continuous Integration</li>
+							<li>DevOps (Infrastructure as a code)</li>
+							<li>Rapid prototyping</li>
+							<li>Lean Customer Development</li>
+					</ul>
+	    	</section>
+
+	    	<section>
+	    		<h2>Development Tools</h2>
+
+	    		<ul>
+							<li>Github - source control</li>
+							<li>Teamcity - continuous integration (deployment) server</li>
+							<li>Redmine - issue tracker</li>
+							<li>Selenium - web browser automated testing</li>
+							<li>New Relic - web traffic performance monitoring</li>
+							<li>Chef - infrastructure management</li>
+							<li>Sensu - monitoring</li>
+							<li>Balsamic, mind mapping and other tools for customer development, ux testing
+	etc</li>
+					</ul>
+	    	</section>
+
+	    	<section>
 				<h2>Security Measures</h2>
 					<ul>
 							<li>AWS hosting is HIPAA compliant</li>
 							<li>No protected health information (PHI) stored on local devices</li>
 							<li>Data-at-Rest is encrypted, SSL encryption of Data-in-Transit</li>
-							<li>Biometric authentication of Users when applicable</li>
+							<li>Biometric authentication of users when applicable</li>
 							<li>Comprehensive audit log and monitoring tools</li>
 							<li>We are educating our users. Security measures built into a product have to be supplemented by an organization culture and policies.</li>
 					</ul>
 				</section>
+    	</section>
 
-				<section>
-				<h2>Interoperability?</h2>
-					<ul>
-							<li class="fragment">All our solutions are built around HL7 FHIR</li>
-							<li class="fragment">which stands for Fast Healthcare Interoperability Resources</li>
-							<li class="fragment">...and called sometimes the "HTML" of healthcare</li>
-							<li class="fragment">FHIR has well documented mapping to other medical standards such as HL7 v2, HL7 v3 or CDA</li>
-							<li class="fragment">You can get clinical data from other vendors’ software into the FHIR storage with minimal efforts</li>
-					</ul>
-				</section>
+    	<section>
+				<h2>The problem we address</h2>
+				<br>
+				Current EHRs are huge monolithic systems with lack of customization
+				and interopeability
+    	</section>
 
-				<section>
-				<h2>Final Comments</h2>
-					<ul>
-							<li>You most likely have had a lot of issues you wanted to get fixed for a long time</li>
-							<li>You want to be efficient, save money for your organization, and deliver optimal care for your patients</li>
-							<li>Don’t give up!</li>
-							<li>you can do much more nowadays than you could do even five years ago and you do not need to spend a fortune to achieve the results you want</li>
-							<li><a href="#/1">Health Samurai</a></li>
-					</ul>
-				</section>
+			<section>
+				<h2>Our offer</h2>
+				<a class="image" href="http://try-fhirplace.hospital-systems.com/fhirbase-presentation/index.html#/" target="_blank">
+					<img width="790" height="450" src="images/fhirbase_architecture.png" alt="Architecture">
+				</a>
+			</section>
+
+	    <section>
+	      <h2>
+	        <span class="gold">F</span>ast
+	        <span class="gold">H</span>ealthcare
+	        <br/>
+	        <span class="gold">I</span>nteroperability
+	        <span class="gold">R</span>esources
+	      </h2>
+
+	      <blockquote>
+	        ... is the next generation international standard <br/>
+	        for exchanging healthcare information electronically
+	      </blockquote>
+	    </section>
+
+			<section>
+			<h2>Why FHIR?</h2>
+				<ul>
+						<li>Utilizes best practises and targets implementers and web technolgies</li>
+						<li>Supports common scenarios but provides with documented extensibility</li>
+						<li>Freely available (CC0 license)</li>
+						<li>Great growing community</li>
+				</ul>
+			</section>
+
+	    <section>
+	      <h2>
+	        <span class="gold">FHIR</span>base
+	      </h2>
+
+	      <blockquote>
+	        ... is an open source stack for <br>
+	        Health IT application development based on FHIR standard
+	      </blockquote>
+	    </section>
+
+			<section>
+				<h2>fhirbase components</h2>
+				<a class="image" href="http://try-fhirplace.hospital-systems.com/fhirbase-presentation/index.html#/" target="_blank">
+					<img width="1142" height="521" src="images/stack.png" alt="components">
+				</a>
+			</section>
+
+			<section>
+			<h2>fhirbase storage</h2>
+        <ul>
+					<li>stores resources relationally and provides with the power of SQL for querying & aggregating</li>
+        	<li>provides with a set of procedures & views to persist and retrieve resources as json documents</li>
+        </ul>
+			</section>
+
+			<section>
+			<h2>fhirbase roadmap</h2>
+				<a class="image" href="https://docs.google.com/drawings/d/1uF3rKMRqyFvtDgCjlT4DPyzh20JwwjjugKhsBluy5XM/edit?usp=sharing" target="_blank">
+					<img width="1012" height="468" src="images/roadmap.png" alt="roadmap">
+				</a>
+			</section>
 
 			</div>
 
