@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-57630718-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<style>
+		.gold { color: gold !important; }
+		.green { color: #6f6 !important; }
+		.reveal pre { box-shadow: none; }
+		.tbl td,
+		.reveal .tbl th {
+		  padding: 5px;
+		  margin: 0;
+		  border-bottom: 1px solid #ddd;
+		  font-weight: normal;
+		}
+		.reveal .tbl td {
+		  text-align: center;
+		  color: lightgreen;
+		  font-weight: bold;
+		}
+
+		@font-face {
+		  font-family: 'LogosFont';
+		  src: url('./LogosFont.ttf');
+		  font-weight: normal;
+		  font-style: normal;
+		}
+		.reveal .icon {
+		  display: inline-block;
+		  font-family: LogosFont ;
+		  font-style: normal;
+		  font-weight: normal;
+		  line-height: 1;
+		  -webkit-font-smoothing: antialiased;
+		  -moz-osx-font-smoothing: grayscale;
+		}
+		</style>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				
+				<section>
+		    		<h2><a href="http://health-samurai.io/" target="_blank">Health Samurai</a></h2>
+
+					<p>finding a simplicity in a complex domain</p> 
+		    	</section>
+
+				<section>
+		    		<h2>Problem</h2>
+
+					<p>The cost of development and implementation of healthcare applications is very high</p> 
+		    	</section>
+
+
+				<section>
+		    		<h2>Solution</h2>
+		    		
+					<p><a href="https://aidbox.io/" target="_blank">Aidbox</a> - a platform for modern web and mobile healthcare applications built on top of a centralized FHIR server</p>
+
+					<br>
+					<p class="fragment">Cuts cost through time to market improvements</p>
+		    	</section>
+
+				<section>
+					<h2>Aidbox</h2>
+
+					<ol>
+					<li>Get a FHIR server in the cloud</li>
+					<li class="fragment">Clone a sample app</li>
+					<li class="fragment">Follow a tutorial</li>
+					<li class="fragment">Use GUI building blocks</li>
+					<li class="fragment">Deploy an app into a secure hosting</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>What can you build with Aidbox?</h2>
+
+					<ul>
+					<li>patient portals</li>
+					<li>apps targeting specific diagnoses</li>
+					<li>patient engagement apps</li>
+					<li>SMART on FHIR apps</li>
+					<li>HIE solutions</li>
+					</ul>
+				</section>	
+
+				<section>
+				<h2>Aidbox platform</h2>
+				<a class="image" href="http://try-fhirplace.hospital-systems.com/fhirbase-presentation/index.html#/" target="_blank">
+				<img width="691" height="392" src="images/fhir-store.png" alt="Architecture">
+				</a>
+				</section>
+
+				<section>
+					<h2>Aidbox features</h2>
+
+					<ul>
+					<li>a scalable database and FHIR® compliant REST API</li>
+					<li>OAuth and flexible security rules to control access</li>
+					<li>secure HIPAA compliant hosting</li>
+					<li>SDK and tutorials for different server and mobile platforms including Java, .NET, JavaScript, Ruby, Python and iOS</li>
+					<li>template applications and GUI building blocks</li>
+					<li>connectors for integration with EHR systems and medical devices</li>
+					<li>SMART on FHIR compatible apps developed by Health Samurai and other developers</li>
+					</ul>
+				</section>	
+
+			
+
+				<section>
+					<h2>Business model</h2>
+
+					<ul>
+					<li>hosting and app store for developers</li>
+					<li>platform for <a href="https://gallery.smarthealthit.org/" target="_blank">SMART on FHIR apps</a> for providers</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Market</h2>
+
+					<ul>
+					<li>9000+ medical startups on AngelList</li>
+					<li>5500+ hospitals in the US alone </li>
+					<li>230K+ physician practices in the US alone</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Competition</h2>
+
+					<ul>
+					<li>Epic, Cerner, athenahealth <span class="fragment">... very limited FHIR API</span></li>
+					<li>Catalyze, Akido etc 	<span class="fragment">... no FHIR server at all</span></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Team <a href="http://health-samurai.io/" target="_blank">Health Samurai</a></h2>
+					<ul>
+					<li>crafting health IT for 10+ years</li>
+					<li>developed and implemented a cloud inpatient EHR in three California hospitals</li>
+					<li>developing FHIR® solutions since 2012 </li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Milestones</h2>
+
+					<ul>
+					<li>before 2011 … dark age of health IT</li>
+					<li>2011 … <a href="http://www.hl7.org/fhir/" target="_blank">FHIR</a> standard (Fast Healthcare Interoperability Resources) was introduced</li>
+					<li>2012 … Health Samurai joined FHIR community	</li>
+					</ul>
+
+				</section>
+
+				<section>
+					<h2>Milestones</h2>
+
+					<ul>
+					<li>2014 … Health Samurai released FHIRbase</li>	
+					<li>2014 … project Argonaut started</li>
+					<li>2015 … ONC included FHIR into interoperability roadmap</li>
+					<li>2015 … Health Samurai released Aidbox beta</li>
+					</ul>
+
+
+				</section>
+
+				<section>
+					<h2><a href="https://aidbox.io/" target="_blank">Aidbox</a> traction</h2>
+
+					<ul>
+					<li>In use by the first customer</li>
+					<li>Health Samurai is speaking with two more</li>
+					<li>Implementation in the first hospital is scheduled in three months</li>
+					</ul>
+					<br><br>
+					<p><a href="https://aidbox.io/" target="_blank">Aidbox</a> is powered by <a href="http://fhirbase.github.io/" target="_blank">FHIRbase</a></p>
+
+				</section>
+
+				<section>
+					<h2><a href="http://fhirbase.github.io/" target="_blank">FHIRbase</a> traction</h2>	
+					<ul>
+					<li><a href="https://www.kainosevolve.com/" target="_blank">Kainos</a> (UK EHR vendor which serves 70+ hospitals)</li>
+					<li><a href="http://netrika.ru/" target="_blank">Netrika</a> (HIE for a file million people city)</li>
+					</ul>					
+				</section>
+
+				<section>
+					<h2>Thanks!</h2>
+
+					<p>Try <a href="https://aidbox.io/" target="_blank">Aidbox</a> now!</p>
+
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	<img src="images/samurai_logo.png" style="width: 100px; box-shadow: 0px 0px 4px #ddd; padding: 4px 8px; border-radius: 15px; position: absolute; top: 30px; right: 30px; background: #222;"/>
+	</body>
+</html>
