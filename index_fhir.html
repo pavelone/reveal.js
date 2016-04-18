@@ -83,34 +83,63 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
+
+				<section>
+		    		<h2><a href="http://health-samurai.io/" target="_blank">Health Samurai</a></h2>
+
+					<p>fostering simplicity in a healthcare domain</p> 
+		    	</section>
+
+		    	<section>
+		    		<h3>State of Interoperability: FHIR, FHIR platforms and their benefits</h3>
+		    	</section>
 				
-								<section>
-		    		<h3>Problem</h3>
+				<section data-markdown><script type="text/template">
+				## HL7 v. 2
+				``` MSH|^~\&|AccMgr|1|||20151015200643||ADT^A01|599102|P|2.3|||
+				EVN|A01|20151010045502||||| 
+				PID|1|010107111^^^MS4^PN^|160922113^^^MS4^MR^001|170922101^^^MS4...
+				PV1|1|I|PREOP^101^1^1^^^S|3|||37^REID^TIMOTHY^Q^^^^^^AccMgr^^^^C...
+				GT1|1|010107127^^^MS4^PN^|BARRETT^JEAN^S^^|BARRETT^LAWRENCE^E^^|...
+				IN1|1||0401|MEDICARE IP|^^^^     |||||||19951001|||MCR|BARRETT^J...
+				IN2||354221840|0000007496^RETIRED|||354221840A||||||||||||||||||...
+				IN1|2||2320|AETNA PPO|PO BOX 14079^PO BOX 14079^LEXINGTON^KY^405...
+				IN2||354221840|0000007496^RETIRED|||||||||||||||||||||||||||||||...
+				```
+				      </script></section>
 
-					<p>The cost of development and implementation of healthcare applications is very high</p> 
+				<section>
+		    		<h3>HL7 v. 3</h3>
+
+					<img width="764" height="503" src="img/RIM.gif" alt="RIM">
 		    	</section>
 
 
 				<section>
-		    		<h3>Solution</h3>
+		    	<h3>FHIR®</h3>
 		    		
-					<p>A platform for modern web and mobile healthcare applications built on top of a centralized FHIR server</p>
-
-					<br>
-					<p class="fragment">It cuts cost through time to market improvements</p>
+		        <h3>	
+		        <span class="gold">F</span>ast
+		        <br/>
+		        <span class="gold">H</span>ealthcare
+		        <br/>
+		        <span class="gold">I</span>nteroperability
+		        <br/>
+		        <span class="gold">R</span>esources
+		        <br/>
+		        </h3>
 		    	</section>
 
 
 				<section>
-		    		<h3>What is FHIR®?</h3>
-		    		
-		    		<p>FHIR – Fast Healthcare Interoperability Resources – is a next generation standards framework created by HL7.</p>
-		    		<p>FHIR combines the best features of HL7's v2, HL7 v3 and CDA product lines while leveraging the latest web standards and applying a tight focus on implementability.</p>
+		    		<p>FHIR solutions are built from a set of modular components called "Resources"</png>
+
+					<img width="764" height="503" src="img/fhir_resources.png" alt="RIM">
 		    	</section>
 
 		    	<section data-markdown>
 		    		<script type="text/template">
-					##### FHIR solutions are built from a set of modular components called "Resources"
+					##### Json or XML
 					```json
 
 					{
@@ -133,44 +162,98 @@
 					</script>
 				</section>
 
-				<section>
-					<h3>FHIR resources</h3>
 
-		    		<p>These resources can easily be assembled into working systems that solve real world clinical and administrative problems at a fraction of the price of existing alternatives.</p>
-		    		<p>FHIR is suitable for use in a wide variety of contexts – mobile phone apps, cloud communications, EHR-based data sharing, server communication in large institutional healthcare providers, and much more.</p>
+				<section>
+		    		<p>80/20 with extensions</p>
+
+					<img height="503" src="img/patient_uml.png" alt="RIM">
 		    	</section>
+
+		    	<section data-markdown>
+		    		<script type="text/template">
+					##### Extensions
+					```json
+					  {
+					  "resourceType" : "Patient",
+					  "extension" : [{
+					    "url" : "http://hl7.org/fhir/StructureDefinition/Pa...-Trial",
+					    "extension" : [{
+					      "url" : "period", 
+					      "valuePeriod" : {
+					         "start" : "2009-03-14" 
+					      }   
+					    }]
+					  }]
+					  ... other data for patient ...
+					}
+
+					```
+					</script>
+				</section>
 
 				<section>
 					<h3>Why FHIR is better?</h3>
 
 					<ul>
 					<li>A strong focus on implementation – fast and easy to implement</li>
-					<li>Multiple implementation libraries, many examples available</li>
+					<li>Require human readability as base level of interoperability</li>
 					<li>Specification is free for use with no restrictions</li>
 					<li>Interoperability out-of-the-box</li>
-					<li>Strong foundation in Web standards – XML, JSON, HTTP, OAuth, etc</li>
+					<li>Strong foundation in Web standards – XML, JSON, HTTPS, OAuth, etc</li>
 					<li>Concise and easily understood specifications</li>
 					</ul>
-				</section>		    	
+				</section>	
+
+		    	<section data-markdown>
+		    		<script type="text/template">
+					##### Human readability
+					```json
+					  {
+					  "resourceType": "Patient",
+					  "id": "pat1",
+					  "text": {
+					    "status": "generated",
+					    "div": "<div>\n      \n      <p>Patient Donald DUCK @ Acme 
+					    Healthcare, Inc. MR = 654321</p>\n    \n    </div>"
+					  },
+					  "identifier": [
+					    {
+					      "use": "usual",
+					      "type": {
+					      	...
+
+					```
+					</script>
+				</section>
+	
 
 				<section>
 					<h3>Why now?</h3>
 					<br>
-					<p>FHIR is becoming the de-facto standard for health IT</p>
-		    	</section>				
+					<p class="fragment">FHIR is becoming the de-facto standard for health IT</p>
+		    	</section>
+
+
+		    	<section>
+		    		<h3>Supported by ONC & CMS</h3>
+		    		<img width="377" height="145" src="img/onc.png" alt="onc">
+		    		<p>A Shared Nationwide Interoperability Roadmap recommends FHIR for exchanging clinical data in 2017</p>
+		    		<p>CMS Stage 3 final rule has references to FHIR and Argonaut when speaking about ONC certified API each EHR should have.</p>
+		    	</section>
 
 				<section>
 					<h3>Supported by vendors and providers</h3>
 		    		<img width="764" height="503" src="img/argonaut.png" alt="argonaut">	    		
-		    	</section>				
+		    	</section>	
+
 
 		    	<section>
-		    		<h3>Supported by ONC</h3>
-		    		<img width="377" height="145" src="img/onc.png" alt="onc">
-		    		<p>A Shared Nationwide Interoperability Roadmap lists FHIR at the first place among medical standards to achieve the goal of interoperability</p>
+		    		<h3>Apps</h3>
+		    		<p>Hundreds of apps are developed</p>
+		    		<p>Thousands of apps will be developed in the next few years</p>
 		    	</section>
 
-				<section>
+		    	<section>
 					<h3>Milestones</h3>
 
 					<ul>
@@ -183,6 +266,7 @@
 					<li>2017 … All major EHRs expose data via FHIR API</li>
 					</ul>
 				</section>
+
 
 				<section>
 		    		<h3>Why FHIR platform?</h3>
@@ -208,7 +292,7 @@
 
 		    		<img width="536" height="322" src="img/distributed_teams.png" alt="distributed">
 
-					<p>Different vendors or development teams can design apps sharing the same back-end with minimal coordination efforts</p>
+					<p >Different vendors or development teams can design apps sharing the same back-end with minimal coordination efforts</p>
 
 		    	</section>
 
