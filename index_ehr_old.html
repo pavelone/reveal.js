@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>A platform for healthcare applications built on top of a FHIR server</title>
+		<title>reveal.js - The HTML Presentation Framework</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -12,21 +12,23 @@
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
 
-		<!-- Code syntax highlighting -->
+		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
 		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
 		</script>
 
 		<script>
@@ -83,19 +85,18 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				
-				<section>
-		    		<h2><a href="http://health-samurai.io/" target="_blank">Health Samurai</a></h2>
 
-					<p>fostering simplicity in a healthcare domain</p> 
-		    	</section>
+			<section>
+				<img width="300" height="300" src="images/pavel.jpg" alt="pavel">
+	      <h3>Pavel Smirnov <h3>
+	      <h3>PM with <a href="http://choice-hs.com/" target="_blank">Choice Hospital Systems</a></h3
+	      >
+    	</section>
 
-		    	    	<section>
-    		<h2>Health Samurai EHR 2.0 Vision</h2>
+    	<section>
+    		<h2>Choice EHR 2.0 Vision</h2>
 
     		<ul>
-
-		    	    		<ul>
 						<li>Single code base core automates most common hospital processes (80/20)</li>
 						<li>Utilizes available standards to maximum</li>
 						<li>Fast deployment of the core product (automated when possible)</li>
@@ -178,24 +179,22 @@ etc</li>
 			</section>
 
 			<section>
-				<h2>Health Samurai process</h2>			
+				<h2>Choice Hospital System process</h2>			
 				<a class="image">
 					<img width="1069" height="483" src="images/process.png" alt="Process">
 				</a>
 			</section>		
-
-
 
 			</div>
 
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+		<script src="js/reveal.min.js"></script>
 
 		<script>
 
-			// Full list of configuration options available at:
+			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				controls: true,
@@ -203,21 +202,26 @@ etc</li>
 				history: true,
 				center: true,
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
-				// Optional reveal.js plugins
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
 				dependencies: [
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
 					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});
 
 		</script>
 
-	<img src="images/samurai_logo.png" style="width: 100px; box-shadow: 0px 0px 4px #ddd; padding: 4px 8px; border-radius: 15px; position: absolute; top: 30px; right: 30px; background: #222;"/>
+	<img src="images/Choice-HSLogo.png" style="width: 200px; box-shadow: 0px 0px 4px #ddd; padding: 4px 8px; border-radius: 15px; position: absolute; top: 30px; right: 30px; background: #222;"/>
 	</body>
 </html>
